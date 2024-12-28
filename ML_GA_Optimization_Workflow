@@ -1,0 +1,17 @@
+digraph ML_GA_Optimization_Workflow {
+	rankdir=LR size="12,8"
+	Input [label="Input Data
+(Experimental Data)" fillcolor=lightblue shape=rect style="rounded, filled"]
+	ML [label="Train ML Model
+(Random Forest)" fillcolor=lightpink shape=rect style="rounded, filled"]
+	GA [label="Run Genetic Algorithm
+(Optimize Parameters)" fillcolor=lightyellow shape=rect style="rounded, filled"]
+	Promoters [label="Evaluate Promoters
+(Optimized K, n)" fillcolor=lightgreen shape=rect style="rounded, filled"]
+	Circuit [label="Final Genetic Circuit
+(Build & Simulate)" fillcolor=lightgray shape=rect style="rounded, filled"]
+	Input -> ML
+	ML -> GA
+	GA -> Promoters
+	Promoters -> Circuit
+}

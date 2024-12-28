@@ -1,0 +1,20 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+                              AND_gate.v + Eco1C1G1T1.UCF                               
+////////////////////////////////////////////////////////////////////////////////////////
+
+/app/temp_out/AND_gate.v
+AND_gate.v
+/app/library/verilogs/AND_gate.v
+/app/library/verilogs
+/app/temp_out/AND_gate.v
+
+
+*****  !ERROR!  *****
+NoneType: None
+
+ERROR finding AND_gate.v, please check verilog input.
+Cello object deleted...
+
+Exiting Cello...

@@ -1,0 +1,50 @@
+{
+  "creator": "Yosys 0.8 (git sha1 5706e90)",
+  "modules": {
+    "main": {
+      "attributes": {
+        "top": 1,
+        "src": "/app/library/verilogs/AND_gate.v:2"
+      },
+      "ports": {
+        "AHL": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "Benzoate": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "GFP": {
+          "direction": "output",
+          "bits": [ "x" ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "AHL": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/app/library/verilogs/AND_gate.v:3"
+          }
+        },
+        "Benzoate": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/app/library/verilogs/AND_gate.v:4"
+          }
+        },
+        "GFP": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "/app/library/verilogs/AND_gate.v:5"
+          }
+        }
+      }
+    }
+  }
+}

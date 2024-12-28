@@ -1,0 +1,14 @@
+// Logic Gate Structure
+digraph {
+	pTac [label="pTac Promoter"]
+	pTet [label="pTet Promoter"]
+	RBS [label="RBS L3S2P55"]
+	GFP [label="GFP CDS"]
+	Terminator [label="L3S3P21 Terminator"]
+	pTac -> GFP [label="OR Logic"]
+	pTet -> GFP [label="OR Logic"]
+	pTac -> RBS [label="AND Logic"]
+	pTet -> RBS [label="AND Logic"]
+	RBS -> GFP [label=Translation]
+	GFP -> Terminator [label=Termination]
+}

@@ -1,0 +1,43 @@
+// ML-GA Optimization Workflow
+digraph {
+	graph [rankdir=TB]
+	Sim_ODE [label="Simulate ODE Dynamics
+(Time-Series Data)" fillcolor=lightgray shape=box style="rounded,filled"]
+	Steady_State [label="Extract Steady-State Outputs
+(For ML Features)" fillcolor=lightgray shape=box style="rounded,filled"]
+	Pre -> Sim_ODE [label=Completed color=black style=solid]
+	Sim_ODE -> Steady_State [label=Completed color=black style=solid]
+	Train [label="Train ML Model
+(Random Forest)" fillcolor=lightgray shape=box style="rounded,filled"]
+	Predict [label="Predict Circuit Behavior
+(ML Inference)" fillcolor=lightgray shape=box style="rounded,filled"]
+	Init_Pop [label="Initialize Population
+(Parameter Sets)" fillcolor=lightgray shape=box style="rounded,filled"]
+	Steady_State -> Train [label=Completed color=black style=solid]
+	Train -> Predict [label=Completed color=black style=solid]
+	GA [label="Genetic Algorithm" fillcolor=lightblue shape=ellipse style=filled]
+	Fitness [label="Evaluate Fitness
+(ML Model Predictions)" fillcolor=lightblue shape=box style="rounded,filled"]
+	Crossover [label="Crossover/Mutation
+(Generate New Parameters)" fillcolor=lightblue shape=box style="rounded,filled"]
+	Selection [label="Select Top Individuals" fillcolor=lightblue shape=box style="rounded,filled"]
+	Predict -> Fitness [label=Completed color=black style=solid]
+	Fitness -> Crossover [label=Completed color=black style=solid]
+	Crossover -> Selection [label=Completed color=black style=solid]
+	Selection -> Fitness [label="Feedback Loop" color=black style=solid]
+	Fetch [label="Fetch Promoter Library
+(SynBioHub)" fillcolor=lightyellow shape=box style="rounded,filled"]
+	Match [label="Match Promoters
+(Optimized Parameters)" fillcolor=lightyellow shape=box style="rounded,filled"]
+	Simulate_Promoter [label="Simulate Promoter Response
+(Input Signals)" fillcolor=lightyellow shape=box style="rounded,filled"]
+	Fetch -> Match [label=Planned color=black style=dashed]
+	Match -> Simulate_Promoter [label=Planned color=black style=dashed]
+	Selection -> Match [label=Completed color=black style=solid]
+	ODE_Validation [label="ODE Validation
+(Validate Circuit Behavior)" fillcolor=lightyellow shape=box style="rounded,filled"]
+	Simulate_Promoter -> ODE_Validation [label=Planned color=black style=dashed]
+	Output [label="Final Optimized Circuit
+(AND/OR Gates)" fillcolor=green shape=ellipse style=filled]
+	ODE_Validation -> Output [label=Planned color=black style=solid]
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sbol="http://sbols.org/v3#"
+>
+  <rdf:Description rdf:about="http://example.org/Simple_Circuit">
+    <sbol:displayId>Simple_Circuit</sbol:displayId>
+    <sbol:name>Simple Genetic Circuit</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#Component"/>
+    <sbol:hasNamespace rdf:resource="http://example.org"/>
+    <sbol:type rdf:resource="https://identifiers.org/SBO:0000251"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:hasFeature rdf:resource="http://example.org/Simple_Circuit/SubComponent1"/>
+    <sbol:hasFeature rdf:resource="http://example.org/Simple_Circuit/SubComponent2"/>
+    <sbol:hasFeature rdf:resource="http://example.org/Simple_Circuit/SubComponent3"/>
+    <sbol:hasFeature rdf:resource="http://example.org/Simple_Circuit/SubComponent4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/pTac">
+    <sbol:displayId>pTac</sbol:displayId>
+    <sbol:name>pTac Promoter</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#Component"/>
+    <sbol:hasNamespace rdf:resource="http://example.org"/>
+    <sbol:type rdf:resource="https://identifiers.org/SBO:0000251"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Simple_Circuit/SubComponent4">
+    <sbol:displayId>SubComponent4</sbol:displayId>
+    <rdf:type rdf:resource="http://sbols.org/v3#SubComponent"/>
+    <sbol:instanceOf rdf:resource="http://example.org/Terminator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Terminator">
+    <sbol:displayId>Terminator</sbol:displayId>
+    <sbol:name>Terminator</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#Component"/>
+    <sbol:hasNamespace rdf:resource="http://example.org"/>
+    <sbol:type rdf:resource="https://identifiers.org/SBO:0000251"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/RBS">
+    <sbol:displayId>RBS</sbol:displayId>
+    <sbol:name>Ribosome Binding Site</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#Component"/>
+    <sbol:hasNamespace rdf:resource="http://example.org"/>
+    <sbol:type rdf:resource="https://identifiers.org/SBO:0000251"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/GFP">
+    <sbol:displayId>GFP</sbol:displayId>
+    <sbol:name>Green Fluorescent Protein</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#Component"/>
+    <sbol:hasNamespace rdf:resource="http://example.org"/>
+    <sbol:type rdf:resource="https://identifiers.org/SBO:0000251"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Simple_Circuit/SubComponent1">
+    <sbol:displayId>SubComponent1</sbol:displayId>
+    <rdf:type rdf:resource="http://sbols.org/v3#SubComponent"/>
+    <sbol:instanceOf rdf:resource="http://example.org/pTac"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Simple_Circuit/SubComponent2">
+    <sbol:displayId>SubComponent2</sbol:displayId>
+    <rdf:type rdf:resource="http://sbols.org/v3#SubComponent"/>
+    <sbol:instanceOf rdf:resource="http://example.org/RBS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Simple_Circuit/SubComponent3">
+    <sbol:displayId>SubComponent3</sbol:displayId>
+    <rdf:type rdf:resource="http://sbols.org/v3#SubComponent"/>
+    <sbol:instanceOf rdf:resource="http://example.org/GFP"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,29 @@
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                       CELLO V2.1                                       
+                              AND_gate.v + Eco1C1G1T1.UCF                               
+////////////////////////////////////////////////////////////////////////////////////////
+
+/app/temp_out/AND_gate.v
+AND_gate.v
+/app/library/verilogs/AND_gate.v
+/app/library/verilogs
+/app/temp_out/AND_gate.v
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+                                 End of Logic Synthesis                                 
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+∫ *** DEBUG *** ∫ Ports [2, 3, 'x'] not used in any cell (gate).
+
+
+
+∫ *** DEBUG *** ∫ Ports [2, 3, 'x'] not used in any cell (gate).
+
+Cello object deleted...
+
+Exiting Cello...
